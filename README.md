@@ -1,4 +1,4 @@
-# starlycode-projects
+# StarlyCode Projects
 Solution that contains various examples made in StarlyCode Studio.
 
 Clone
