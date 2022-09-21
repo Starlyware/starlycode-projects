@@ -14,14 +14,15 @@
 #end project-data
 
 #project-folders
+folder:['StarlyCode Projects']
 folder:['StarlyCode Projects\Dropping Text']
 folder:['StarlyCode Projects\Dropping Text\style']
 #end project-folders
 
 #project-files
+file:['StarlyCode Projects\index.html']
 file:['StarlyCode Projects\Dropping Text\index.html']
 file:['StarlyCode Projects\Dropping Text\style\style.css']
-file:['StarlyCode Projects\index.html']
 #end project-files
 
 #project-options
