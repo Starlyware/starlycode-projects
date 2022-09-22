@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+    font-family: 'Lora';
+}
+
+#menu {
+    width: 560px;
+    margin: 100px auto;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    position: relative;
+    float: left;
+    width: 140px;
+    text-align: center;
+    list-style: none;
+}
+
+#menu li a {
+    background-color: #A6F6FF;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+#menu li a:hover {
+    background-color: #7DD4FF;
+    text-shadow: 0px 0px 1px #FFF;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+}
+
+#menu ul ul li a {
+    background-color: #A6F6FF;
+}
+
+#menu ul ul li a:hover {
+    background-color: #7DD4FF;
+}

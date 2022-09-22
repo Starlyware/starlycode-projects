@@ -10,19 +10,23 @@
 
 #project-data
 *solution-name: "StarlyCode Projects";
-*last-tab: "StarlyCode Projects\Dropping Text\index.html";
+*last-tab: "StarlyCode Projects\index.html";
 #end project-data
 
 #project-folders
 folder:['StarlyCode Projects']
 folder:['StarlyCode Projects\Dropping Text']
 folder:['StarlyCode Projects\Dropping Text\style']
+folder:['StarlyCode Projects\Top Navigation']
+folder:['StarlyCode Projects\Top Navigation\style']
 #end project-folders
 
 #project-files
 file:['StarlyCode Projects\index.html']
 file:['StarlyCode Projects\Dropping Text\index.html']
 file:['StarlyCode Projects\Dropping Text\style\style.css']
+file:['StarlyCode Projects\Top Navigation\index.html']
+file:['StarlyCode Projects\Top Navigation\style\style.css']
 #end project-files
 
 #project-options
