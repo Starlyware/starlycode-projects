@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript data Form</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gianluca Grasso">
+        <meta name="description" content="">
+        <meta name="generator" content="StarlyCode Studio">
+        <link rel="icon" type="image/png" href="https://www.starlyware.com/files/starly-code/icon.ico">
+        
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Raleway');
+            
+            .container {
+                padding: 0 15px;
+                margin: 0 auto;
+            }
+
+            .center {
+                text-align: center;
+            }
+            
+            h1 {
+                font-family: 'Raleway';
+                font-size: 3rem;
+            }
+          
+            h2 {
+                font-family: 'Raleway';
+                font-size: 2rem;
+            }
+            
+            .text {
+                color: #222;
+            }
+            
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            
+            .input-field {
+                border-radius: 0;
+                box-shadow: none;
+                font-size: 14px;
+                padding: 8px 10px;
+                line-height: 1;
+            }
+            
+            .input-field:focus {
+                color: #495057;
+                background-color: #fff;
+                border-color: #80bdff;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+            }
+            
+            .btn {
+                background: #007FFF;
+                border: 0;
+                border-radius: 15px;
+                padding: 10px 24px;
+                color: #fff;
+                transition: 0.4s;
+            }
+        </style>
+      
+      <script type="text/javascript">
+          function mess(){
+              var username = document.form1.name.value;
+              var pass     = document.form1.password.value;
+              if (username == "") {
+                  window.alert("Please enter the username")
+              }
+              else if (pass == "") {
+                  window.alert("Please enter the password")
+              }
+              else {
+                  window.alert("Username: " + username + "\nPassword: " + pass)
+              }
+          }
+      </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <h1>JavaScript data Form!</h1>
+                <p class="text">This is an example of a simple data form in JavaScript.</p>
+            </div>
+            
+            <h2>Login</h2>
+            <form name="form1">
+                <div class="form-group">
+                    <input type="text" class="input-field" size="15" name="name" placeholder="Username *" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input-field" size="15" name="password" placeholder="Password *" required>
+                </div>
+                <input type="button" class="btn" value="Go!" onClick="mess(); return false;">
+            </form>
+        </div>
+    </body>
+</html>

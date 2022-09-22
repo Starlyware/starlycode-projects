@@ -19,6 +19,7 @@ folder:['StarlyCode Projects\Dropping Text']
 folder:['StarlyCode Projects\Dropping Text\style']
 folder:['StarlyCode Projects\Top Navigation']
 folder:['StarlyCode Projects\Top Navigation\style']
+folder:['StarlyCode Projects\JavaScript data Form']
 #end project-folders
 
 #project-files
@@ -27,6 +28,7 @@ file:['StarlyCode Projects\Dropping Text\index.html']
 file:['StarlyCode Projects\Dropping Text\style\style.css']
 file:['StarlyCode Projects\Top Navigation\index.html']
 file:['StarlyCode Projects\Top Navigation\style\style.css']
+file:['StarlyCode Projects\JavaScript data Form\index.html']
 #end project-files
 
 #project-options
