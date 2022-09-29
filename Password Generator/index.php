@@ -18,5 +18,5 @@ function rPass($length = 6) {
 
 }
 
-echo "Password: ".rPass(8);
+echo "Password: ".rPass(12);
 ?>
