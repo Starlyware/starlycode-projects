@@ -4,8 +4,8 @@
 */
 
 #scs-data
-*StarlyCode-Studio_version: "1.0.1";
-*StarlyScript-Language_version: "1.0";
+*StarlyCode-Studio_version: "1.0.2";
+*StarlyScript-Language_version: "1.1";
 #end scs-data
 
 #project-data
@@ -31,6 +31,7 @@ file:['StarlyCode Projects\Top Navigation\index.html']
 file:['StarlyCode Projects\Top Navigation\style\style.css']
 file:['StarlyCode Projects\JavaScript data Form\index.html']
 file:['StarlyCode Projects\Password Generator\index.php']
+file:['StarlyCode Projects\biscotti.html']
 #end project-files
 
 #project-options
