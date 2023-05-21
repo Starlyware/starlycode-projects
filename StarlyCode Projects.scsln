@@ -10,15 +10,15 @@
 
 #project-data
 *solution-name: "StarlyCode Projects";
-*last-tab: "StarlyCode Projects\index.html";
+*last-tab: "StarlyCode Projects\Dropping Text\index.html";
 #end project-data
 
 #project-folders
 folder:['StarlyCode Projects']
 folder:['StarlyCode Projects\Dropping Text']
 folder:['StarlyCode Projects\Dropping Text\style']
-folder:['StarlyCode Projects\Top Navigation']
-folder:['StarlyCode Projects\Top Navigation\style']
+folder:['StarlyCode Projects\Simple Top Navigation']
+folder:['StarlyCode Projects\Simple Top Navigation\style']
 folder:['StarlyCode Projects\JavaScript data Form']
 folder:['StarlyCode Projects\Password Generator']
 #end project-folders
@@ -27,10 +27,11 @@ folder:['StarlyCode Projects\Password Generator']
 file:['StarlyCode Projects\index.html']
 file:['StarlyCode Projects\Dropping Text\index.html']
 file:['StarlyCode Projects\Dropping Text\style\style.css']
-file:['StarlyCode Projects\Top Navigation\index.html']
-file:['StarlyCode Projects\Top Navigation\style\style.css']
+file:['StarlyCode Projects\Simple Top Navigation\index.html']
+file:['StarlyCode Projects\Simple Top Navigation\style\style.css']
 file:['StarlyCode Projects\JavaScript data Form\index.html']
 file:['StarlyCode Projects\Password Generator\index.php']
+file:['StarlyCode Projects\favicon.ico']
 #end project-files
 
 #project-options
