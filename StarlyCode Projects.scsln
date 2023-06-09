@@ -10,7 +10,6 @@
 
 #project-data
 *solution-name: "StarlyCode Projects";
-*last-tab: "StarlyCode Projects\Dropping Text\index.html";
 #end project-data
 
 #project-folders
@@ -36,3 +35,6 @@ file:['StarlyCode Projects\favicon.ico']
 
 #project-options
 #end project-options
+
+#opened-tabs
+#end opened-tabs
