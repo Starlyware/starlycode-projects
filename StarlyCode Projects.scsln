@@ -4,7 +4,7 @@
 */
 
 #scs-data
-*StarlyCode-Studio_version: "1.0.2";
+*StarlyCode-Studio_version: "1.0.3";
 *StarlyScript-Language_version: "1.1";
 #end scs-data
 
@@ -37,4 +37,6 @@ file:['StarlyCode Projects\favicon.ico']
 #end project-options
 
 #opened-tabs
+tab:['StarlyCode Projects\Simple Top Navigation\index.html']
+tab:['StarlyCode Projects\Simple Top Navigation\style\style.css']
 #end opened-tabs
