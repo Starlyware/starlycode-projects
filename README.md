@@ -14,7 +14,7 @@ If you want to change the name of the main folder, you will also need to remembe
 License
 -------
 
-    Copyright © 2014 - 2022, Starlyware
+    Copyright © 2014 - 2023, Starlyware
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
