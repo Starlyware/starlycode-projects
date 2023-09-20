@@ -1,5 +1,5 @@
 # StarlyCode Projects
-Solution that contains various examples made in StarlyCode Studio.
+Fork of StarlyCode Projects, a solution that contains various examples made in StarlyCode Studio.
 
 Clone
 -----
