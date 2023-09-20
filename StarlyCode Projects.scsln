@@ -20,6 +20,9 @@ folder:['StarlyCode Projects\Simple Top Navigation']
 folder:['StarlyCode Projects\Simple Top Navigation\style']
 folder:['StarlyCode Projects\JavaScript data Form']
 folder:['StarlyCode Projects\Password Generator']
+folder:['StarlyCode Projects\Item Selector']
+folder:['StarlyCode Projects\Item Selector\js']
+folder:['StarlyCode Projects\Item Selector\style']
 #end project-folders
 
 #project-files
@@ -31,10 +34,15 @@ file:['StarlyCode Projects\Simple Top Navigation\style\style.css']
 file:['StarlyCode Projects\JavaScript data Form\index.html']
 file:['StarlyCode Projects\Password Generator\index.php']
 file:['StarlyCode Projects\favicon.ico']
+file:['StarlyCode Projects\README.md']
+file:['StarlyCode Projects\Item Selector\index.html']
+file:['StarlyCode Projects\Item Selector\js\platform-selector.js']
+file:['StarlyCode Projects\Item Selector\style\style.css']
 #end project-files
 
 #project-options
 #end project-options
 
 #opened-tabs
+tab:['StarlyCode Projects\index.html']
 #end opened-tabs
