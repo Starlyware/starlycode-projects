@@ -1,4 +1,10 @@
 <?php
+/*
+  Project: Password Generator
+  Author: Gianluca Grasso (https://github.com/gian-grasso)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+    
 function rPass($length = 6) {
 
   $char = explode(" ",

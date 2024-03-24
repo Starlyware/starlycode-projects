@@ -1,3 +1,9 @@
+/*
+  Project: Item Selector
+  Author: Gianluca Grasso (https://github.com/gian-grasso)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+   
 document.getElementById('category').addEventListener('change', function () {
     //Gets the selected category
     var selectedCategory = this.value;
@@ -26,4 +32,4 @@ document.getElementById('category').addEventListener('change', function () {
         break;
       }
     }
-  });
+});

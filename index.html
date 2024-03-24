@@ -1,3 +1,8 @@
+<!--
+  Solution: StarlyCode Projects
+  Author: Gianluca Grasso (https://github.com/gian-grasso)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,44 +12,37 @@
         <meta name="description" content="">
         <meta name="generator" content="StarlyCode Studio">
         <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
-        
-        <style type="text/css">
-            @import url('https://fonts.googleapis.com/css?family=Raleway');
-            
-            .container {
-                padding: 0 15px;
-                margin: 0 auto;
-            }
-            
-            .center {
-              text-align: center;
-            }
-            
-            h1 {
-              font-family: 'Raleway';
-              font-size: 3rem;
-            }
-            
-            .text {
-              color: #222;
-            }
-        </style>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="container">
-            <div class="center">
-                <h1>Welcome!</h1>
-                <p class="text">Here you can find all the example projects for StarlyCode Studio.</p>
+        <header class="header">
+            <div>
+                <h1>StarlyCode Studio Projects</h1>
             </div>
-            
-            <h2>Projects:</h2>
-            <ul type="circle">
-                <li><a href="Dropping Text/index.html">Dropping Text</a></li>
-                <li><a href="Item Selector/index.html">Item Selector</a></li>
-                <li><a href="JavaScript data Form/index.html">JavaScript data Form</a></li>
-                <li><a href="Password Generator/index.php">Password Generator</a></li>
-                <li><a href="Simple Top Navigation/index.html">Simple Top Navigation</a></li>
-            </ul>
+        </header>
+
+        <div class="container">
+          <p class="text">Here you can find all the example projects for StarlyCode Studio.</p>
+          
+          <h2>Projects:</h2>
+          <ul>
+            <li><a href="Dropping Text/index.html">Dropping Text</a></li>
+            <li><a href="Item Selector/index.html">Item Selector</a></li>
+            <li><a href="JavaScript data Form/index.html">JavaScript data Form</a></li>
+            <li><a href="Password Generator/index.php">Password Generator</a></li>
+            <li><a href="Simple Top Navigation/index.html">Simple Top Navigation</a></li>
+          </ul>
         </div>
+        
+        <footer class="footer">
+          <p id="copyright-year"></p>
+        </footer>
+        
+        <!-- Copyright -->
+        <script type="text/javascript">
+          var date = new Date();
+          var year = date.getFullYear();
+          document.getElementById('copyright-year').innerHTML = ("Copyright \u00A9 " + year + " Starlyware.");
+        </script>
     </body>
 </html>

@@ -1,3 +1,9 @@
+/*
+  Project: Item Selector
+  Author: Gianluca Grasso (https://github.com/gian-grasso)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
