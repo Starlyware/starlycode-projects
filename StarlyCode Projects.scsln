@@ -16,6 +16,7 @@
 folder:['StarlyCode Projects']
 folder:['StarlyCode Projects\assets']
 folder:['StarlyCode Projects\assets\css']
+folder:['StarlyCode Projects\Bottom Navigation']
 folder:['StarlyCode Projects\Dropping Text']
 folder:['StarlyCode Projects\Dropping Text\style']
 folder:['StarlyCode Projects\Item Selector']
@@ -32,6 +33,7 @@ file:['StarlyCode Projects\index.html']
 file:['StarlyCode Projects\favicon.ico']
 file:['StarlyCode Projects\README.md']
 file:['StarlyCode Projects\assets\css\style.css']
+file:['StarlyCode Projects\Bottom Navigation\index.html']
 file:['StarlyCode Projects\Dropping Text\index.html']
 file:['StarlyCode Projects\Dropping Text\style\style.css']
 file:['StarlyCode Projects\Item Selector\index.html']
@@ -47,6 +49,4 @@ file:['StarlyCode Projects\Simple Top Navigation\style\style.css']
 #end project-options
 
 #opened-tabs
-tab:['StarlyCode Projects\index.html']
-tab:['StarlyCode Projects\assets\css\style.css']
 #end opened-tabs
