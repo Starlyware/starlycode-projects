@@ -1,12 +1,12 @@
 /*
-Project: Password Generator
+  Project: Password Generator
   Author: Gianluca Grasso (https://github.com/gian-grasso)
   License: http://www.apache.org/licenses/LICENSE-2.0
 */
 
 const generateBtn = document.getElementById('generate-btn');
-const result      = document.getElementById('result');
-const copyBtn     = document.getElementById('copy-btn');
+const result = document.getElementById('result');
+const copyBtn = document.getElementById('copy-btn');
 
 const chars = {
     letters: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
