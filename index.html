@@ -4,46 +4,87 @@
   License: http://www.apache.org/licenses/LICENSE-2.0
 -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>StarlyCode Projects</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gianluca Grasso">
-        <meta name="description" content="">
-        <meta name="generator" content="StarlyCode Studio">
-        <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header class="header">
-            <div>
-                <h1>StarlyCode Studio Projects</h1>
-            </div>
-        </header>
-
-        <div class="container">
-          <p class="text">Here you can find all the example projects for StarlyCode Studio.</p>
-          
-          <h2>Projects:</h2>
-          <ul>
-            <li><a href="Bottom Navigation/index.html">Bottom Navigation</a></li>
-            <li><a href="Dropping Text/index.html">Dropping Text</a></li>
-            <li><a href="Item Selector/index.html">Item Selector</a></li>
-            <li><a href="JavaScript data Form/index.html">JavaScript data Form</a></li>
-            <li><a href="Password Generator/index.php">Password Generator</a></li>
-            <li><a href="Simple Top Navigation/index.html">Simple Top Navigation</a></li>
-          </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gianluca Grasso">
+    <meta name="description" content="Collection of example projects made with StarlyCode Studio.">
+    <meta name="generator" content="StarlyCode Studio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarlyCode Projects</title>
+    <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://www.starlyware.com/files/images/logos/starlycode.png" alt="StarlyCode Logo" class="logo">
+            <h1>StarlyCode Studio Projects</h1>
         </div>
-        
-        <footer class="footer">
-          <p id="copyright-year"></p>
-        </footer>
-        
-        <!-- Copyright -->
-        <script type="text/javascript">
-          var date = new Date();
-          var year = date.getFullYear();
-          document.getElementById('copyright-year').innerHTML = ("Copyright \u00A9 " + year + " Starlyware.");
-        </script>
-    </body>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Explore, Learn and Create</h2>
+        <p>Here you can find all the example projects made with <strong>StarlyCode Studio</strong>.<br>
+        Click on a project to see it in action!</p>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="card">
+                <h3>Bottom Navigation</h3>
+                <p>A simple and responsive bottom navigation menu for mobile.</p>
+                <a href="Bottom Navigation/index.html" class="btn">Open Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Dropping Text</h3>
+                <p>Text animation effect where letters drop from the top.</p>
+                <a href="Dropping Text/index.html" class="btn">Open Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Item Selector</h3>
+                <p>A clean item selector with interactive styles.</p>
+                <a href="Item Selector/index.html" class="btn">Open Project</a>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript Data Form</h3>
+                <p>A form that handles and displays data dynamically using JavaScript.</p>
+                <a href="JavaScript data Form/index.html" class="btn">Open Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Password Generator</h3>
+                <p>Generate random secure passwords with one click (PHP + JS).</p>
+                <a href="Password Generator/index.php" class="btn">Open Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Simple Top Navigation</h3>
+                <p>A minimal top navigation bar for websites.</p>
+                <a href="Simple Top Navigation/index.html" class="btn">Open Project</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="copyright-year"></p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById('copyright-year').innerHTML =
+            "Copyright © " + year + " Starlyware.";
+    </script>
+</body>
 </html>
