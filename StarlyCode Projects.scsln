@@ -51,6 +51,7 @@ file:['StarlyCode Projects\Simple Top Navigation\style\style.css']
 #end project-options
 
 #opened-tabs
-tab:['StarlyCode Projects\index.html']
-tab:['StarlyCode Projects\assets\css\style.css']
+tab:['StarlyCode Projects\Item Selector\index.html']
+tab:['StarlyCode Projects\Item Selector\style\style.css']
+tab:['StarlyCode Projects\Item Selector\js\platform-selector.js']
 #end opened-tabs

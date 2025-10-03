@@ -4,32 +4,23 @@
   License: http://www.apache.org/licenses/LICENSE-2.0
 */
    
-document.getElementById('category').addEventListener('change', function () {
-    //Gets the selected category
-    var selectedCategory = this.value;
-  
-    //Gets the item drop-down menu
-    var itemDropdown = document.getElementById('item');
-  
-    //Hides all options in the item drop-down menu
-    for (var i = 0; i < itemDropdown.options.length; i++) {
-      itemDropdown.options[i].style.display = 'none';
-    }
-  
-    //Show only the right items for the selected category
-    var items = document.querySelector('option[value="' + selectedCategory + '"]').getAttribute('data-items').split(',');
-    for (var j = 0; j < items.length; j++) {
-      var itemOption = document.querySelector('option[value="' + items[j].trim() + '"]');
-      if (itemOption) {
-        itemOption.style.display = 'block';
-      }
-    }
-  
-    //Resets the item drop-down menu to the first visible option
-    for (var k = 0; k < itemDropdown.options.length; k++) {
-      if (itemDropdown.options[k].style.display !== 'none') {
-        itemDropdown.value = itemDropdown.options[k].value;
-        break;
-      }
-    }
+const category = document.getElementById('category');
+const item = document.getElementById('item');
+
+category.addEventListener('change', () => {
+  const selectedCategory = category.value;
+
+  //Hide all items
+  Array.from(item.options).forEach(opt => opt.style.display = 'none');
+
+  //Show relevant items
+  const items = category.selectedOptions[0].dataset.items.split(',');
+  items.forEach(val => {
+    const option = item.querySelector(`option[value="${val.trim()}"]`);
+    if(option) option.style.display = 'block';
+  });
+
+  //Reset item select to first visible
+  const firstVisible = Array.from(item.options).find(opt => opt.style.display !== 'none');
+  if(firstVisible) item.value = firstVisible.value;
 });

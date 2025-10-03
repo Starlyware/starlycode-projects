@@ -3,62 +3,58 @@
   Author: Gianluca Grasso (https://github.com/gian-grasso)
   License: http://www.apache.org/licenses/LICENSE-2.0
 -->
+
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Item Selector</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gianluca Grasso">
-        <meta name="description" content="Item Selector for drop-down list">
-        <meta name="generator" content="StarlyCode Studio">
-        <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
-        <link href="style/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="container">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Gianluca Grasso">
+  <meta name="description" content="Interactive Item Selector with dynamic drop-down lists">
+  <meta name="generator" content="StarlyCode Studio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Selector</title>
+  <link rel="icon" href="https://www.starlyware.com/files/images/logos/starlycode.png" type="image/png">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section-title">
+      <h2>Item Selector Example</h2>
+      <p>Select a category to reveal its items dynamically.</p>
+    </div>
 
-        <div class="section-title">
-          <h2>Example of Item Selector</h2>
-        </div>
-
-        <div class="mt-5">
-          
-            <div class="col-lg-8 mt-5 mt-lg-0">
-              
-              <div class="form-group mt-3">
-                <select class="form-control" name="category" id="category" required>
-                    <option value="" class="select-none" data-items="none">Select a category... *</option>
-                    <option value="Animals" data-items="Dog,Cat,Bird,Snake">Animals</option>
-                    <option value="Colors" data-items="Green,Yellow,Pink,Blue">Colors</option>
-                    <option value="Cities" data-items="Rome,Berlin,Madrid,Paris">Cities</option>
-                </select> 
-              </div>
-              
-              <div class="form-group mt-3">
-                <select class="form-control" name="item" id="item" required>
-                    <option value="none" class="select-none">Select an item... *</option>
-                    <option value="Dog" style="display: none;">Dog</option>
-                    <option value="Cat" style="display: none;">Cat</option>
-                    <option value="Bird" style="display: none;">Bird</option>
-                    <option value="Snake" style="display: none;">Snake</option>
-                    <option value="Green" style="display: none;">Green</option>
-                    <option value="Yellow" style="display: none;">Yellow</option>
-                    <option value="Pink" style="display: none;">Pink</option>
-                    <option value="Blue" style="display: none;">Blue</option>
-                    <option value="Rome" style="display: none;">Rome</option>
-                    <option value="Berlin" style="display: none;">Berlin</option>
-                    <option value="Madrid" style="display: none;">Madrid</option>
-                    <option value="Paris" style="display: none;">Paris</option>
-                </select>
-              </div>
-  
-            </div>
-  
-          </div>
-
+    <div class="selector-box">
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" class="form-control" required>
+          <option value="" disabled selected>Select a category…</option>
+          <option value="Animals" data-items="Dog,Cat,Bird,Snake">Animals</option>
+          <option value="Colors" data-items="Green,Yellow,Pink,Blue">Colors</option>
+          <option value="Cities" data-items="Rome,Berlin,Madrid,Paris">Cities</option>
+        </select>
       </div>
-        
-      <!-- Platform Selector JS File-->
-      <script src="js/platform-selector.js"></script>
-    </body>
+
+      <div class="form-group">
+        <label for="item">Item:</label>
+        <select id="item" class="form-control" required>
+          <option value="" disabled selected>Select an item…</option>
+          <option value="Dog" style="display:none;">Dog</option>
+          <option value="Cat" style="display:none;">Cat</option>
+          <option value="Bird" style="display:none;">Bird</option>
+          <option value="Snake" style="display:none;">Snake</option>
+          <option value="Green" style="display:none;">Green</option>
+          <option value="Yellow" style="display:none;">Yellow</option>
+          <option value="Pink" style="display:none;">Pink</option>
+          <option value="Blue" style="display:none;">Blue</option>
+          <option value="Rome" style="display:none;">Rome</option>
+          <option value="Berlin" style="display:none;">Berlin</option>
+          <option value="Madrid" style="display:none;">Madrid</option>
+          <option value="Paris" style="display:none;">Paris</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/platform-selector.js"></script>
+</body>
 </html>
