@@ -1,107 +1,98 @@
 <!--
-  Project: JavaScript data Form
+  Project: JavaScript Data Form
   Author: Gianluca Grasso (https://github.com/gian-grasso)
   License: http://www.apache.org/licenses/LICENSE-2.0
 -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>JavaScript data Form</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Gianluca Grasso">
-        <meta name="description" content="">
-        <meta name="generator" content="StarlyCode Studio">
-        <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
-        
-        <style type="text/css">
-            @import url('https://fonts.googleapis.com/css?family=Raleway');
-            
-            .container {
-                padding: 0 15px;
-                margin: 0 auto;
-            }
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Gianluca Grasso">
+  <meta name="description" content="Modern JavaScript Data Form example">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JS Data Form — StarlyCode</title>
 
-            .center {
-                text-align: center;
-            }
-            
-            h1 {
-                font-family: 'Raleway';
-                font-size: 3rem;
-            }
-          
-            h2 {
-                font-family: 'Raleway';
-                font-size: 2rem;
-            }
-            
-            .text {
-                color: #222;
-            }
-            
-            .form-group {
-                margin-bottom: 1rem;
-            }
-            
-            .input-field {
-                border-radius: 0;
-                box-shadow: none;
-                font-size: 14px;
-                padding: 8px 10px;
-                line-height: 1;
-            }
-            
-            .input-field:focus {
-                color: #495057;
-                background-color: #fff;
-                border-color: #80bdff;
-                outline: 0;
-                box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-            }
-            
-            .btn {
-                background: #007FFF;
-                border: 0;
-                border-radius: 15px;
-                padding: 10px 24px;
-                color: #fff;
-                transition: 0.4s;
-            }
-        </style>
-      
-      <script type="text/javascript">
-          function mess(){
-              var username = document.form1.name.value;
-              var pass     = document.form1.password.value;
-              if (username == "") {
-                  window.alert("Please enter the username")
-              }
-              else if (pass == "") {
-                  window.alert("Please enter the password")
-              }
-              else {
-                  window.alert("Username: " + username + "\nPassword: " + pass)
-              }
-          }
-      </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="center">
-                <h1>JavaScript data Form!</h1>
-                <p class="text">This is an example of a simple data form in JavaScript.</p>
-            </div>
-            
-            <h2>Login</h2>
-            <form name="form1">
-                <div class="form-group">
-                    <input type="text" class="input-field" size="15" name="name" placeholder="Username *" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="input-field" size="15" name="password" placeholder="Password *" required>
-                </div>
-                <input type="button" class="btn" value="Go!" onClick="mess(); return false;">
-            </form>
+  <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
+  <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <header class="card-header">
+        <h1>JS Data Form</h1>
+        <p class="muted">A modern demo form: validation, password strength, generator and submissions list.</p>
+      </header>
+
+      <form id="dataForm" class="form" novalidate>
+        <div class="field">
+          <label for="username">Username <span class="required">*</span></label>
+          <input id="username" name="username" type="text" placeholder="Your username" autocomplete="username" required>
+          <small class="error" aria-live="polite"></small>
         </div>
-    </body>
+
+        <div class="field">
+          <label for="email">Email <span class="muted">(optional)</span></label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password <span class="required">*</span></label>
+
+          <div class="password-row">
+            <div class="password-wrap">
+              <input id="password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" required>
+              <button type="button" class="icon-btn" id="togglePassword" aria-label="Show password" title="Show / hide">
+                <!-- simple eye icon -->
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 5c-7 0-11 7-11 7s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+              </button>
+            </div>
+
+            <div class="pw-actions">
+              <button type="button" id="generateBtn" class="btn small">Generate</button>
+            </div>
+          </div>
+
+          <div class="strength">
+            <div class="strength-bar" id="strengthBar" style="width:0%"></div>
+          </div>
+          <small class="strength-text" id="strengthText" aria-live="polite"></small>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="row space-between">
+          <label class="checkbox">
+            <input id="remember" type="checkbox">
+            <span>Remember (demo)</span>
+          </label>
+
+          <div class="actions">
+            <button type="reset" class="btn ghost">Reset</button>
+            <button type="submit" class="btn primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="card small" aria-live="polite">
+      <header class="card-header">
+        <h2>Submissions (demo)</h2>
+        <p class="muted">Saved locally for preview. Not secure for real passwords.</p>
+      </header>
+
+      <div id="submissionsArea">
+        <ul id="submissionsList" class="submissions-list"></ul>
+      </div>
+
+      <div class="card-footer">
+        <button id="clearStorage" class="btn danger small">Clear demo storage</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js" defer></script>
+</body>
 </html>
