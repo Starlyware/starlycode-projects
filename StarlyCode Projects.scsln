@@ -30,6 +30,8 @@ folder:['StarlyCode Projects\Elegant Top Navigation\style']
 folder:['StarlyCode Projects\Password Generator\style']
 folder:['StarlyCode Projects\Password Generator\js']
 folder:['StarlyCode Projects\Elegant Top Navigation\js']
+folder:['StarlyCode Projects\JavaScript data Form\style']
+folder:['StarlyCode Projects\JavaScript data Form\js']
 #end project-folders
 
 #project-files
@@ -51,6 +53,8 @@ file:['StarlyCode Projects\Elegant Top Navigation\style\style.css']
 file:['StarlyCode Projects\Password Generator\style\style.css']
 file:['StarlyCode Projects\Password Generator\js\script.js']
 file:['StarlyCode Projects\Elegant Top Navigation\js\menu.js']
+file:['StarlyCode Projects\JavaScript data Form\style\style.css']
+file:['StarlyCode Projects\JavaScript data Form\js\script.js']
 #end project-files
 
 #project-options
