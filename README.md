@@ -4,7 +4,7 @@ Sample web projects made in StarlyCode Studio.
 Clone
 -----
 You can clone this repositories via the command:
-```git clone https://github.com/Starlyware/starlycode-projects.git "StarlyCode Projects"```.
+```git clone https://github.com/Infamousmick/starlycode-projects.git "StarlyCode Projects"```.
 
 Configuration
 -----
