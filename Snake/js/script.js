@@ -1,8 +1,14 @@
-const canvas = document.getElementById("game");
-const ctx = canvas.getContext("2d");
+/*
+  Project: Snake Game
+  Author: Infamick (https://github.com/Infamousmick)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+const canvas       = document.getElementById("game");
+const ctx          = canvas.getContext("2d");
 const scoreDisplay = document.getElementById("score");
-const speedSelect = document.getElementById("speed");
-const startBtn = document.getElementById("startBtn");
+const speedSelect  = document.getElementById("speed");
+const startBtn     = document.getElementById("startBtn");
 
 const box = 20;
 let snake;

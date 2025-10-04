@@ -1,9 +1,16 @@
+<!--
+  Project: Snake Game
+  Author: Infamick (https://github.com/Infamousmick)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+-->
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <title>Snake Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <div class="container">
@@ -12,17 +19,17 @@
     <div class="game-wrapper">
       <canvas id="game" width="400" height="400"></canvas>
       <div class="controls">
-        <label for="speed">Velocità:</label>
+        <label for="speed">Speed:</label>
         <select id="speed">
-          <option value="200">Bassa</option>
-          <option value="150" selected>Media</option>
-          <option value="100">Alta</option>
+        <option value="200">Low</option>
+        <option value="150" selected>Medium</option>
+        <option value="100">High</option>
         </select>
-        <button id="startBtn">Inizia</button>
+        <button id="startBtn">Start</button>
         <p id="score">Score: 0</p>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
