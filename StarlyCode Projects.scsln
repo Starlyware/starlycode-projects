@@ -38,6 +38,9 @@ folder:['StarlyCode Projects\Snake\js']
 folder:['StarlyCode Projects\Tris']
 folder:['StarlyCode Projects\Tris\style']
 folder:['StarlyCode Projects\Tris\js']
+folder:['StarlyCode Projects\Memory Game']
+folder:['StarlyCode Projects\Memory Game\style']
+folder:['StarlyCode Projects\Memory Game\js']
 #end project-folders
 
 #project-files
@@ -67,12 +70,13 @@ file:['StarlyCode Projects\Snake\js\script.js']
 file:['StarlyCode Projects\Tris\index.html']
 file:['StarlyCode Projects\Tris\style\style.css']
 file:['StarlyCode Projects\Tris\js\script.js']
+file:['StarlyCode Projects\Memory Game\index.html']
+file:['StarlyCode Projects\Memory Game\style\style.css']
+file:['StarlyCode Projects\Memory Game\js\script.js']
 #end project-files
 
 #project-options
 #end project-options
 
 #opened-tabs
-tab:['StarlyCode Projects\index.html']
-tab:['StarlyCode Projects\assets\css\style.css']
 #end opened-tabs
