@@ -1,0 +1,36 @@
+<!--
+  Project: Halloween Memory Game
+  Author: Gianluca Grasso (https://github.com/gian-grasso)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gianluca Grasso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Memory Game &#x1F383;</title>
+    <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Halloween Memory Game &#x1F383;</h1>
+      <div class="stats">
+        <span>Level: <span id="level">1</span></span>
+        <span>Moves: <span id="moves">0</span></span>
+        <span>Time: <span id="timer">0</span>s</span>
+        <button id="restart">Restart</button>
+      </div>
+      <div id="gameBoard" class="board"></div>
+    </div>
+
+    <!-- Sounds -->
+    <audio id="sound-match" src="sounds/correct.mp3"></audio>
+    <audio id="sound-wrong" src="sounds/wrong.mp3"></audio>
+    <audio id="sound-win" src="sounds/win.mp3"></audio>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

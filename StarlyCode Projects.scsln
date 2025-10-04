@@ -41,6 +41,10 @@ folder:['StarlyCode Projects\Tris\js']
 folder:['StarlyCode Projects\Memory Game']
 folder:['StarlyCode Projects\Memory Game\style']
 folder:['StarlyCode Projects\Memory Game\js']
+folder:['StarlyCode Projects\Halloween Memory Game']
+folder:['StarlyCode Projects\Halloween Memory Game\style']
+folder:['StarlyCode Projects\Halloween Memory Game\js']
+folder:['StarlyCode Projects\Halloween Memory Game\sounds']
 #end project-folders
 
 #project-files
@@ -73,6 +77,12 @@ file:['StarlyCode Projects\Tris\js\script.js']
 file:['StarlyCode Projects\Memory Game\index.html']
 file:['StarlyCode Projects\Memory Game\style\style.css']
 file:['StarlyCode Projects\Memory Game\js\script.js']
+file:['StarlyCode Projects\Halloween Memory Game\index.html']
+file:['StarlyCode Projects\Halloween Memory Game\style\style.css']
+file:['StarlyCode Projects\Halloween Memory Game\js\script.js']
+file:['StarlyCode Projects\Halloween Memory Game\sounds\correct.mp3']
+file:['StarlyCode Projects\Halloween Memory Game\sounds\win.mp3']
+file:['StarlyCode Projects\Halloween Memory Game\sounds\wrong.mp3']
 #end project-files
 
 #project-options
