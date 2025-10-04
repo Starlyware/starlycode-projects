@@ -35,6 +35,9 @@ folder:['StarlyCode Projects\JavaScript data Form\js']
 folder:['StarlyCode Projects\Snake']
 folder:['StarlyCode Projects\Snake\style']
 folder:['StarlyCode Projects\Snake\js']
+folder:['StarlyCode Projects\Tris']
+folder:['StarlyCode Projects\Tris\style']
+folder:['StarlyCode Projects\Tris\js']
 #end project-folders
 
 #project-files
@@ -61,6 +64,9 @@ file:['StarlyCode Projects\JavaScript data Form\js\script.js']
 file:['StarlyCode Projects\Snake\index.html']
 file:['StarlyCode Projects\Snake\style\style.css']
 file:['StarlyCode Projects\Snake\js\script.js']
+file:['StarlyCode Projects\Tris\index.html']
+file:['StarlyCode Projects\Tris\style\style.css']
+file:['StarlyCode Projects\Tris\js\script.js']
 #end project-files
 
 #project-options
