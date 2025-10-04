@@ -78,13 +78,27 @@ body, html {
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
+/* SECTION TITLES */
 .section-title {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 /* PROJECTS GRID */
