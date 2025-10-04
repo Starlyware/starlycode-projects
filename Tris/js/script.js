@@ -1,3 +1,9 @@
+/*
+  Project: Tic Tac Toe
+  Author: Infamick (https://github.com/Infamousmick)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+
 // --- ELEMENTS ---
 const setup = document.getElementById("setup");
 const game = document.getElementById("game");

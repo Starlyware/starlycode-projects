@@ -1,3 +1,9 @@
+/*
+  Project: Snake Game
+  Author: Infamick (https://github.com/Infamousmick)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+
 const canvas       = document.getElementById("game");
 const ctx          = canvas.getContext("2d");
 const scoreDisplay = document.getElementById("score");
@@ -99,7 +105,7 @@ function draw() {
     snake.pop();
   }
 
-  // ✅ Controllo collisione corretto
+  //Collision check
   const lenToCheck = willEat ? snake.length : snake.length - 1;
   for (let i = 1; i < lenToCheck; i++) {
     if (snake[i].x === newHead.x && snake[i].y === newHead.y) {
@@ -111,10 +117,10 @@ function draw() {
 
 function endGame() {
   clearInterval(game);
-  direction = null;
-  startBtn.textContent = "Ricomincia";
+  direction            = null;
+  startBtn.textContent = "Restart";
   speedSelect.disabled = false;
-  alert("Game Over! Punteggio: " + score);
+  alert("Game Over! Score: " + score);
 }
 
 startBtn.addEventListener("click", () => {
@@ -125,7 +131,7 @@ startBtn.addEventListener("click", () => {
   if (game) clearInterval(game);
   game = setInterval(draw, parseInt(speedSelect.value));
 
-  startBtn.textContent = "Inizia";
+  startBtn.textContent = "Start";
 });
 
 resetGame();
