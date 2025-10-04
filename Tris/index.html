@@ -1,0 +1,86 @@
+<!--
+  Project: Tic Tac Toe
+  Author: Infamick (https://github.com/Infamousmick)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="icon" type="image/png" href="https://www.starlyware.com/files/images/logos/starlycode.png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>✨ Tic Tac Toe ✨</h1>
+
+    <!-- Setup Screen -->
+    <div id="setup">
+      <label>Player 1 name:</label>
+      <input type="text" id="player1" placeholder="Player 1" />
+
+      <br><br>
+
+      <label>Player 2 name:</label>
+      <input type="text" id="player2" placeholder="Player 2" />
+
+      <br><br>
+
+      <label>Choose symbol for Player 1:</label>
+      <select id="player1Symbol">
+        <option value="X" class="symbol-x">X</option>
+        <option value="O" class="symbol-o">O</option>
+      </select>
+
+      <br><br>
+
+      <label>Number of wins to finish the match:</label>
+      <select id="winTarget">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <br><br>
+      <button id="startBtn">Start Game 🎮</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game" class="hidden">
+      <h2 id="turnText"></h2>
+
+      <div id="scoreboard">
+        <p><span id="name1"></span>: <span id="score1">0</span></p>
+        <p><span id="name2"></span>: <span id="score2">0</span></p>
+        <p>Target: <span id="targetWins">3</span> wins</p>
+      </div>
+
+      <div class="board-container">
+        <div class="board" id="board">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+          <div id="win-line"></div>
+        </div>
+      </div>
+
+      <p id="status"></p>
+      <button id="restartRound">🔁 Next Round</button>
+      <button id="resetGame">🏠 Back to Menu</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
