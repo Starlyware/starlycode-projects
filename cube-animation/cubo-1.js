@@ -1,3 +1,9 @@
+/*
+  Project: Cube Animation
+  Author: Anna De Feo (https://github.com/annadef)
+  License: http://www.apache.org/licenses/LICENSE-2.0
+*/
+
 let grade = 0,
     active = false,
     interval;
